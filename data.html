@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataTable Example</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+
+<table id="example" class="display nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+            <th>Extn.</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Donna Snider</td>
+            <td>Customer Support</td>
+            <td>New York</td>
+            <td>27</td>
+            <td>2011/01/25</td>
+            <td>$112,000</td>
+            <td>27</td>
+            <td>2011/01/25</td>
+            <td>$112,000</td>
+          </tr>
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable({
+            scrollX: true,
+            scrollCollapse: true,
+            paging: false
+        });
+    });
+</script>
+<style>
+div.dataTables_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+</style>
+
+</body>
+</html>
